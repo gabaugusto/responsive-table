@@ -1,0 +1,318 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.newPlan {
+  margin: 10px 0 0;
+}
+
+.newPlan, .newPlan * {
+  font-family: "Roboto", arial, sans-serif;
+}
+
+.newPlan {
+  width: 98%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.newPlan td {
+  padding: 3% 4%;
+}
+
+.tableHeader th {
+  background: #353736;
+  color: #FFF;
+  padding: 1% 4%;
+}
+
+.tableHeader th span {
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  font-weight: 100;
+}
+
+.tableHeader td:first-child {
+  background: #2f2f2f;
+  width: 265px;
+}
+
+.title {
+  font-size: 32px;
+}
+
+.title span.nDesc {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  width: 100%;
+}
+
+.row:nth-child(odd) {
+  background: #eee;
+}
+
+.arrow-right, .arrow-right-light-blue, .arrow-right-lime, .arrow-right-white, .arrow-right-deep-pink, .arrow-right-premium, .arrow-right-orange, .arrow-right-deep-gray, .arrow-gray, .arrow-right-yellow {
+  width: 0px;
+  height: 0px;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid #2f2f2f;
+  margin: 0 25%;
+  position: absolute;
+  left: 0;
+}
+
+.arrow-right-light-blue {
+  border-left: 30px solid #36cccb;
+}
+
+.arrow-right-lime {
+  border-left: 30px solid #bfc946;
+}
+
+.arrow-right-white {
+  border-left: 30px solid #fefefe;
+}
+
+.arrow-right-yellow {
+  border-left: 30px solid #edc712;
+}
+
+.arrow-right-deep-pink {
+  border-left: 30px solid #f04d4e;
+}
+
+.arrow-right-orange {
+  border-left: 30px solid #e58701;
+}
+
+.arrow-right-gray {
+  border-left: 30px solid #2f2f2f;
+}
+
+.row .title01, .row .title02, .row .title03, .row .title04, .row .title05 {
+  color: #FFF;
+}
+
+.row td:first-child:after {
+  left: 100%;
+  top: 50%;
+  border: 0 solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: #2f2f2f;
+  margin-top: -20px;
+}
+
+.row01 .nPrice {
+  border: 2px solid #36cccb !important;
+}
+
+.row02 .nPrice {
+  border: 2px solid #bfc946 !important;
+}
+
+.row03 .nPrice {
+  border: 2px solid #edc712 !important;
+}
+
+.row04 .nPrice {
+  border: 2px solid #e58701 !important;
+}
+
+.row05 .nPrice {
+  border: 2px solid #f04d4e !important;
+}
+
+.row01 td:last-child .nPrice {
+  background: #36cccb !important;
+}
+
+.row02 td:last-child .nPrice {
+  background: #bfc946 !important;
+}
+
+.row03 td:last-child .nPrice {
+  background: #edc712 !important;
+}
+
+.row03.rowShadow td:last-child .nPrice {
+  background: #FFF !important;
+  border: 1px solid #FFF !important;
+}
+
+.row04 td:last-child .nPrice {
+  background: #e58701 !important;
+}
+
+.row05 td:last-child .nPrice {
+  background: #f04d4e !important;
+}
+
+.row td:nth-child(3) {
+  background: rgba(203, 203, 203, .3);
+}
+
+.row td:last-child {
+  background: rgba(233, 233, 233, .3);
+}
+
+.nPrice {
+  font-size: 26px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  background: #FFF;
+  color: #212121;
+  border-radius: 50%;
+  max-width: 80px;
+  margin: 0 auto;
+  padding: 10px 0;
+  height: 80px;
+  z-index: 600;
+  line-height: 2;
+  box-sizing: border-box;
+}
+
+.nPrice:before {
+  content: "Xi$";
+  font-size: 11px;
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 -15px;
+}
+
+.row td:last-child .nPrice {
+  color: #FFF;
+}
+
+.nPrice span {
+  position: absolute;
+  margin: -25px -25px 0px;
+  color: inherit;
+  font-size: 11px;
+  padding: 2%;
+  z-index: 550;
+  line-height: 1;
+  display: none;
+}
+
+.linkContractTable {
+  position: relative;
+  float: none;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFF;
+  width: 100%;
+  height: auto;
+  padding: 7px 0 8px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  box-sizing: border-box;
+}
+
+.linkContractTable:hover {
+  border: 1px solid #FFF;
+  box-shadow: 0px 0px 12px rgba(33, 33, 33, .5);
+}
+
+.row td:nth-child(3) .linkContractTable {
+  background: #FFF;
+}
+
+.rowShadow {
+  box-shadow: 3px 3px 3px rgba(33, 33, 33, .3);
+}
+
+.rowShadow td:first-child, .rowShadow td:first-child * {
+  background: #36cccb !important;
+  color: #FFF !important;
+}
+
+.rowShadow td:first-child, .rowShadow td:first-child * {
+  background: #36cccb !important;
+  color: #FFF !important;
+}
+
+.rowShadow td:last-child, .rowShadow td:nth-child(3) {
+  background: #36cccb !important;
+  color: #FFF !important;
+}
+
+.rowShadow td:last-child * {
+  color: #36cccb !important;
+}
+
+@media screen and (max-width: 829px) {
+  .newPlan th {
+    display: none;
+    width: 92%;
+  }
+  .newPlan th:first-child {
+    display: block;
+  }
+  .newPlan td {
+    display: block;
+    width: 92%;
+  }
+  .linkContractTable {
+    margin: 10px 0;
+  }
+  .nDesc {
+    font-weight: bold;
+  }
+  .nQntd {
+    text-align: center;
+    width: 100%;
+    background: #ccc;
+    font-weight: bold;
+  }
+  .row td:last-child {
+    background: #fefefe;
+  }
+  .row td:nth-child(3)::before {
+    content: "Etiam";
+    width: 100px;
+    border-bottom: 1px solid #2f2f2f;
+    padding: 8px 4px;
+    color: #2f2f2f;
+    margin: -12px 0 0;
+  }
+  .row td:last-child::before {
+    content: "Proin";
+    width: 100px;
+    border-bottom: 1px solid #2f2f2f;
+    padding: 8px 4px;
+    color: #2f2f2f;
+    margin: -12px 0 0;
+  }
+  .row {
+    display: block;
+    margin: 10px 0;
+    box-shadow: 3px 3px 3px rgba(133, 133, 133, .5);
+  }
+  .nPrice span {
+    margin: -5px -8px 0px;
+  }
+  .row, th {
+    border: 1px solid #999;
+    box-sizing: content-box;
+    padding: 0;
+  }
+  .arrow-right, .arrow-right-light-blue, .arrow-right-lime, .arrow-right-white, .arrow-right-deep-pink, .arrow-right-premium, .arrow-right-orange, .arrow-right-deep-gray, .arrow-gray, .arrow-right-yellow {
+    display: none;
+  }
+}
